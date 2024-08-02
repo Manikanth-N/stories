@@ -1,3 +1,49 @@
-remote_theme: Manikanth-N/stories
+# Site settings
+title: My Data Visualization Site
+description: A site dedicated to data visualization projects
+baseurl: "/stories" # Adjust to your repository name
+url: "https://manikanth-n.github.io" # Your GitHub Pages URL
+
+# Remote theme
+remote_theme: pages-themes/cayman@v0.2.0
+
+# Plugins
 plugins:
   - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-include-cache
+  - jekyll-data
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+
+# Google Analytics (optional)
+google_analytics: UA-XXXXXXXX-X
+
+# Exclusions
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+
+# Data files
+data_source: _data
+
+# Theme settings (specific to Cayman)
+theme: jekyll-theme-cayman
+
+# Navigation links (optional)
+nav:
+  - name: Home
+    link: /
+  - name: About
+    link: /about
+  - name: Projects
+    link: /projects
+  - name: Contact
+    link: /contact
